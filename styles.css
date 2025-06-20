@@ -1,0 +1,35 @@
+/* 版面大結構區塊 */
+header, main {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 頁首背景色 + 白字 */
+header {
+  background-color: #937fd4;
+  color: white;
+}
+
+/* 頁首圖片 */
+header img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+/* 頁尾灰色背景 */
+footer {
+  background-color: #343434;
+  color: #d6d6d6;
+  padding: 15px;
+  text-align: center;
+}
+
+.myworldproject img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.myavatarproject img {
+  width: 300px;
+  border-radius: 10px;
+}
