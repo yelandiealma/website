@@ -6,40 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>夜嵐蝶 Alma 的網站</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#top">首頁</a></li>
+            <li><a href="#contact">聯絡我</a></li>
+            <li><a href="#myworld">我的世界</a></li>
+            <li><a href="#myavatar">我的角色</a></li>
+        </ul>
+    </nav>
+
+    <header id="top">
         <img src="img/6.png" alt="夜嵐蝶 Alma 的照片">
         <h1>夜嵐蝶 Alma</h1>
         <p>長居於 VRChat 世界裡，喜歡創作和甜點。</p>
     </header>
 
+
+
     <main>
 
-        <section>
+        <section class="contactme" id="contact">
             <h2>聯繫方式 / 社交媒體帳號</h2>
             <a href="https://github.com/yelandiealma" target="_blank">GitHub：夜嵐蝶Alma</a>
             <a href="https://x.com/yelandiealma" target="_blank">X、Twitter：夜嵐蝶Alma</a>
             <a href="https://x.com/yelandiealmaVRC" target="_blank">X、Twitter：夜嵐蝶Alma_VRC</a>
             <a href="https://yelandiealma.booth.pm/" target="_blank">BOOTH：夜嵐蝶Alma的小店</a>
             <a href="https://crowdin.com/profile/yelandiealma" target="_blank">Crowdin：夜嵐蝶Alma</a>
-        </section>
-
-        <section class="myworldproject">
-            <h2>我的世界</h2>
-            <img src="img/Crimson-Tipped Tree.png" alt="夕陽樹">
-            <img src="img/Jellyfish Chamber.png" alt="水母房">
-            <img src="img/The Misty Realm.png" alt="陰雨之地">
-            <img src="img/small pink room.png" alt="小房間">
-            <img src="img/dark forst.png" alt="黑暗之森">
-            <img src="img/yld home.png" alt="小家">
 
         </section>
 
-        <section class="myavatarproject">
-            <h2>我的角色（改模）</h2>
+        <section class="myworldproject" id="myworld">
+            <h2><br>我的世界</h2>
+            <div class="world-gallery">
+                <a href="img/Crimson-Tipped Tree.png" data-lightbox="myworld"
+                    data-title='<a href="https://vrchat.com/home/world/wrld_47b4b625-b2b7-4735-a1d7-156bf4093e6f" target="_blank">夢境 Dream - 夕陽樹</a>'>
+                    <img src="img/Crimson-Tipped Tree.png" alt="夕陽樹">
+                </a>
+                <a href="img/Jellyfish Chamber.png" data-lightbox="myworld"
+                    data-title='<a href="https://vrchat.com/home/world/wrld_47b4b625-b2b7-4735-a1d7-156bf4093e6f" target="_blank">夢境 Dream - 水母房</a>'>
+                    <img src="img/Jellyfish Chamber.png" alt="水母房">
+                </a>
+                <a href="img/The Misty Realm.png" data-lightbox="myworld"
+                    data-title='<a href="https://vrchat.com/home/world/wrld_47b4b625-b2b7-4735-a1d7-156bf4093e6f" target="_blank">夢境 Dream - 陰雨之地</a>'>
+                    <img src="img/The Misty Realm.png" alt="陰雨之地">
+                </a>
+                <a href="img/small pink room.png" data-lightbox="myworld"
+                    data-title='<a href="https://vrchat.com/home/world/wrld_5e3d30a8-7edc-47cf-8f0b-b3fa8f8e17a3" target="_blank">Small Pink ROOM</a>'>
+                    <img src="img/small pink room.png" alt="小房間">
+                </a>
+                <a href="img/dark forst.png" data-lightbox="myworld"
+                    data-title='<a href="https://vrchat.com/home/world/wrld_70d63f1f-9e6f-442f-a0fb-542419373a4f" target="_blank">Dark Forest</a>'>
+                    <img src="img/dark forst.png" alt="黑暗之森">
+                </a>
+                <a href="img/yld home.png" data-lightbox="myworld"
+                    data-title='<a href="https://vrchat.com/home/world/wrld_e6e88722-fde3-419c-a14c-92dcaf827801" target="_blank">夜嵐蝶Alma的窩 3.0</a>'>
+                    <img src="img/yld home.png" alt="小家">
+                </a>
+            </div>
+
+        </section>
+
+        <section class="myavatarproject" id="myavatar">
+            <h2><br>我的角色（改模）</h2>
             <img src="img/afk sleep.png" alt="右近睡眠">
             <img src="img/yld butterfly.png" alt="蝴蝶異頭">
         </section>
@@ -58,9 +93,19 @@
     </main>
 
     <footer>
-        <p>📮 聯絡我：yelandiealma@gmail.com</p>
         <p>© 2025 夜嵐蝶Alma</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'albumLabel': '圖片 %1 之 %2',
+        })
+    </script>
+
 
 </body>
 
