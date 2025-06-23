@@ -118,3 +118,8 @@ footer p {
 .avatar-gallery img:hover {
   transform: scale(1.03);
 }
+
+.btn {
+  border-radius: 36px !important;
+  margin: 4px 2px !important;
+}
